@@ -19,14 +19,15 @@
     /* InductMe Team Section */
 
     .team-section {
-      padding: clamp(80px, 9vw, 130px) 6%;
+      padding: 100px 6%;
       background: #102f38;
       color: #ffffff;
     }
 
     .team-intro {
-      max-width: 1050px;
-      margin: 0 auto 60px;
+      max-width: 690px;
+      margin: 0 auto 55px;
+      text-align: center;
     }
 
     .team-intro .eyebrow {
@@ -37,98 +38,91 @@
 
     .team-intro h2 {
       margin: 16px 0;
-      font-size: clamp(2.7rem, 5vw, 4.8rem);
-      line-height: 1.05;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.2;
       color: #ffffff;
     }
 
-    .leadership-tagline {
-      margin-bottom: 24px;
-      color: #ffffff;
-      font: italic clamp(1.25rem, 2.2vw, 1.7rem)/1.45 Georgia, 'Times New Roman', serif;
-    }
-
-    .leadership-summary {
-      max-width: 920px;
+    .team-intro > p:last-child {
       color: #c5d6d8;
-      font-size: 1.05rem;
-      line-height: 1.8;
+      line-height: 1.7;
     }
 
     .team-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-      max-width: 1200px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 35px;
+      max-width: 1050px;
       margin: 0 auto;
     }
 
     .team-member {
-      padding: clamp(30px, 4vw, 48px);
-      border: 1px solid rgba(255, 255, 255, 0.14);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 35px 20px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 12px;
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.035);
     }
 
     .team-avatar {
-      display: grid;
-      place-items: center;
-      width: 76px;
-      height: 76px;
-      margin-bottom: 28px;
-      border: 1px solid #7db0ae;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+      margin-bottom: 25px;
+      border: 2px solid #60848b;
       border-radius: 50%;
       background: #24525a;
       color: #ffffff;
-      font: 1.35rem/1 Georgia, 'Times New Roman', serif;
+      font-size: 2rem;
+      font-weight: 600;
       letter-spacing: 0.05em;
+      overflow: hidden;
+    }
+
+    .team-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
     .team-member h3 {
       margin: 0 0 10px;
       color: #ffffff;
-      font: 2rem/1.15 Georgia, 'Times New Roman', serif;
+      font-size: 1.2rem;
     }
 
-    .team-title {
-      margin-bottom: 12px;
-      color: #ffffff;
-      font-weight: 700;
-      line-height: 1.45;
+    .team-role {
+      margin: 0;
+      color: #bdd0d3;
+      font-size: 0.95rem;
+      line-height: 1.5;
     }
 
-    .team-credentials {
-      margin-bottom: 28px;
-      color: #a5c5c4;
-      font-size: 0.92rem;
-      line-height: 1.65;
-    }
-
-    .team-bio p {
-      margin-bottom: 1.25rem;
-      color: #d7e1df;
-      line-height: 1.75;
-    }
-
-    .team-bio p:last-child {
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 800px) {
+    @media (max-width: 700px) {
       .team-section {
-        padding: 70px 24px;
+        padding: 65px 5%;
       }
 
       .team-grid {
         grid-template-columns: 1fr;
+        gap: 18px;
+        max-width: 420px;
       }
 
       .team-member {
-        padding: 30px 24px;
+        padding: 28px 20px;
       }
 
-      .team-member h3 {
-        font-size: 1.75rem;
+      .team-avatar {
+        width: 90px;
+        height: 90px;
+        font-size: 1.6rem;
       }
     }
   </style>
@@ -260,106 +254,43 @@
       </div>
     </section>
 
-    <!-- LEADERSHIP TEAM -->
+    <!-- MEET OUR TEAM -->
 
     <section
       class="team-section"
       aria-labelledby="team-heading">
 
       <div class="team-intro">
-        <p class="eyebrow">Elint Harbour Technologies</p>
+        <p class="eyebrow">The people behind InductMe</p>
 
-        <h2 id="team-heading">Meet our leadership team.</h2>
+        <h2 id="team-heading">Meet our team.</h2>
 
-        <p class="leadership-tagline">
-          Clinical expertise. Technological innovation. Strategic vision.
-        </p>
-
-        <p class="leadership-summary">
-          Founded by clinicians with multidisciplinary expertise in medicine,
-          technology and research, Elint Harbour Technologies brings together
-          clinical insight, technical capability and strategic leadership to
-          develop practical, responsible and scalable healthcare solutions.
+        <p>
+          Bringing together clinical expertise, technology
+          and strategic leadership to improve healthcare
+          onboarding, workplace transitions and
+          organisational integration.
         </p>
       </div>
 
       <div class="team-grid">
-
         <article class="team-member">
           <div class="team-avatar" aria-hidden="true">CE</div>
-
-          <h3>Dr Chudi Chuks-Eboka</h3>
-          <p class="team-title">
-            Co-Founder &amp; Chief Executive Officer (CEO)
-          </p>
-          <p class="team-credentials">
-            MBBS, MRCGP, MFSEM, CCFP<br>
-            PGDip Specialist Dermatology · PGCert POCUS
-          </p>
-
-          <div class="team-bio">
-            <p>
-              Dr Chudi Chuks-Eboka is a family physician with over a decade of
-              postgraduate clinical experience and multidisciplinary expertise
-              spanning healthcare consultancy, clinical research, digital health
-              and technology innovation.
-            </p>
-            <p>
-              Alongside his clinical career, he has undertaken consultancy and
-              advisory roles with leading healthcare and technology organisations
-              across the UK, Europe and North America, contributing to the
-              development, clinical evaluation and implementation of emerging
-              healthcare technologies, including artificial intelligence applications.
-            </p>
-            <p>
-              His experience bridges frontline clinical practice, healthcare
-              technology, research and strategic consultancy, providing a practical
-              understanding of the challenges facing modern healthcare systems. As
-              Co-Founder and CEO of Elint Harbour Technologies, he leads the
-              organisation's strategic direction, partnerships and healthcare
-              innovation initiatives, with a focus on translating clinical insight
-              and emerging technologies into sustainable solutions for healthcare
-              organisations.
-            </p>
-          </div>
+          <h3>Chudi Eboka</h3>
+          <p class="team-role">Co-founder</p>
         </article>
 
         <article class="team-member">
           <div class="team-avatar" aria-hidden="true">MI</div>
-
-          <h3>Dr Morgan Ikponmwosa</h3>
-          <p class="team-title">
-            Co-Founder &amp; Chief Technology Officer (CTO)
-          </p>
-          <p class="team-credentials">
-            MBBS, MRCGP, DFSEM<br>
-            MSc Computer Science &amp; Artificial Intelligence
-          </p>
-
-          <div class="team-bio">
-            <p>
-              Dr Morgan Ikponmwosa is a general practitioner with several years of
-              clinical experience and a multidisciplinary background spanning
-              medicine, computer science and artificial intelligence.
-            </p>
-            <p>
-              His expertise brings together clinical practice, software engineering
-              and emerging technologies, with a particular interest in developing
-              and applying technological innovation and research to address complex
-              challenges in healthcare delivery.
-            </p>
-            <p>
-              As Co-Founder and CTO of Elint Harbour Technologies, he leads the
-              organisation's technology strategy, digital product development and
-              technical innovation, overseeing the design and development of
-              scalable healthcare technology solutions. His work focuses on bridging
-              clinical medicine and technology, ensuring that digital solutions are
-              grounded in real-world healthcare needs, technical robustness and
-              responsible innovation.
-            </p>
-          </div>
+          <h3>Morgan Ikponmwosa</h3>
+          <p class="team-role">Co-founder</p>
         </article>
 
+        <article class="team-member">
+          <div class="team-avatar" aria-hidden="true">ES</div>
+          <h3>Eman Shamsaee</h3>
+          <p class="team-role">Clinical Operations and Strategic Partnership Lead</p>
+        </article>
       </div>
     </section>
 
